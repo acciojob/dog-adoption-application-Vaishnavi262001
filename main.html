@@ -1,16 +1,59 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Adoption Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        label {
+            font-size: 14px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <form>
+        <input id="name" type="text" placeholder="Name">
+        <input id="phone" type="text" placeholder="Phone Number">
+        <input id="address" type="text" placeholder="Address">
+        
+        <input id="checkbox" type="checkbox" value="Have you ever lived with a Dog before?">
+        <label for="checkbox">Have you ever lived with a Dog before?</label>
+        
+        <select id="multiSelect" multiple>
+            <option> Black Labrador</option>
+            <option>Shitazu</option>
+            <option>Huskey</option>
+        </select>
+        
+        <input id="submit" type="submit" value="Submit">
+    </form>
 
 </body>
-
 </html>
